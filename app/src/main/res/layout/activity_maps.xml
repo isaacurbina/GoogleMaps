@@ -1,0 +1,98 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_location"
+            android:layout_weight="1"
+            android:text="@string/cb_location_text"
+            android:onClick="enableLocation" />
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_traffic"
+            android:layout_weight="1"
+            android:text="@string/cb_traffic_text"
+            android:onClick="enableTraffic" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_closer"
+            android:layout_weight="1"
+            android:onClick="findClosest"
+            android:text="Closest" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_types"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn0"
+            android:layout_weight="1"
+            android:onClick="comeToMe"
+            android:text="Me" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:onClick="goToMark1"
+            android:text="New Orleans" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:onClick="goToMark2"
+            android:text="Miami" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:onClick="goToMark3"
+            android:text="Dallas" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:onClick="goToMark4"
+            android:text="New York" />
+
+    </LinearLayout>
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mac.isaac.googlemapssaul.MapsActivity" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">GoogleMapsSaul</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_permission_denied">Permission denied, enable in the App Permissions in Settings to use</string>
+    <string name="permission_required_toast">Location Permissions are required</string>
+    <string name="permission_rationale_location">Permission for location services required to show current location</string>
+    <string name="cb_location_text">Use my location</string>
+    <string name="cb_traffic_text">Show traffic</string>
+
+    <string-array name="layers">
+        <item>Normal</item>
+        <item>Hybrid</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+    </string-array>
+
+</resources>
